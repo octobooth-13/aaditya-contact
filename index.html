@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8fa">
+  <meta name="description" content="Connect with Aaditya Jindal, RETR0-OS. Find CloudForge, GitHub, and LinkedIn.">
+  <title>Aaditya Jindal | RETR0-OS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#171d22; --muted:#52616c; --paper:#f6f8fa; --mint:#b8f5d6; --blue:#1955dc; --line:#d3dce2; }
+    * { box-sizing:border-box; letter-spacing:0; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family:"DM Sans",sans-serif; }
+    body::before { content:""; position:fixed; inset:0; z-index:-1; background-image:linear-gradient(#d3dce230 1px,transparent 1px),linear-gradient(90deg,#d3dce230 1px,transparent 1px); background-size:32px 32px; }
+    main { max-width:760px; margin:auto; padding:40px 32px 28px; }
+    .masthead { display:flex; align-items:center; justify-content:space-between; gap:16px; padding-bottom:22px; border-bottom:1px solid var(--ink); font-family:"Space Grotesk",sans-serif; font-size:12px; font-weight:600; }
+    .identity { display:grid; grid-template-columns:1fr 132px; align-items:center; gap:24px; padding:44px 0 34px; }
+    .handle { color:var(--blue); font-family:"Space Grotesk",sans-serif; font-size:15px; font-weight:600; margin:0 0 12px; }
+    h1 { font-family:"Space Grotesk",sans-serif; font-size:48px; line-height:1.04; font-weight:600; margin:0; }
+    .portrait { position:relative; }
+    .portrait img { display:block; width:132px; height:132px; border-radius:50%; border:1px solid var(--ink); object-fit:cover; background:var(--mint); }
+    .portrait::after { content:""; width:22px; height:22px; position:absolute; bottom:4px; right:6px; background:var(--mint); border:4px solid var(--paper); border-radius:50%; }
+    .hello { margin:0 0 34px; color:var(--muted); font-size:18px; line-height:1.6; max-width:480px; }
+    .links { border-top:1px solid var(--ink); }
+    .link { display:grid; grid-template-columns:44px minmax(0,1fr) 24px; align-items:center; gap:18px; color:inherit; text-decoration:none; padding:25px 14px; border-bottom:1px solid var(--line); transition:background .15s, padding .15s; }
+    .link:hover { background:#e9eef3; padding-left:20px; }
+    .link:focus-visible { outline:3px solid var(--blue); outline-offset:3px; }
+    .link.featured { background:var(--mint); border-bottom-color:var(--ink); }
+    .link.featured:hover { background:#a5efca; }
+    .symbol { width:42px; height:42px; display:grid; place-items:center; }
+    .symbol svg { width:25px; height:25px; stroke-width:1.7; }
+    .cloudforge { color:#133d29; }
+    .github { color:var(--ink); }
+    .linkedin { color:var(--blue); }
+    .label { display:block; font-family:"Space Grotesk",sans-serif; font-weight:600; font-size:22px; }
+    .url { display:block; color:var(--muted); font-size:13px; margin-top:5px; overflow-wrap:anywhere; }
+    .arrow { width:22px; height:22px; }
+    footer { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; padding-top:26px; font-size:12px; color:var(--muted); }
+    .wordmark { font-family:"Space Grotesk",sans-serif; font-weight:700; color:var(--ink); }
+    @keyframes arrive { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:none; } }
+    .identity,.hello,.links { animation:arrive .5s both; }
+    .hello { animation-delay:.08s; } .links { animation-delay:.15s; }
+    @media(max-width:520px) { main { padding:24px 20px; } .identity { grid-template-columns:1fr 88px; gap:12px; padding:32px 0 26px; } h1 { font-size:36px; } .portrait img { width:88px; height:88px; } .hello { font-size:16px; margin-bottom:26px; } .link { gap:12px; padding:23px 8px; } .label { font-size:20px; } }
+    @media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none!important; transition:none!important; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="masthead"><span>AADITYA / CONTACT</span><span>GITHUB UNIVERSE 2026</span></header>
+    <section class="identity" aria-label="Aaditya Jindal">
+      <div><p class="handle">@RETR0-OS</p><h1>Aaditya<br>Jindal.</h1></div>
+      <div class="portrait"><img src="https://github.com/RETR0-OS.png?size=264" alt="Aaditya Jindal's GitHub avatar" width="132" height="132"></div>
+    </section>
+    <p class="hello">Good to meet you.<br>Let's build something worth shipping.</p>
+    <nav class="links" aria-label="Connect with Aaditya">
+      <a class="link featured" href="https://trycloudforge.com">
+        <span class="symbol cloudforge"><i data-lucide="cloud-lightning" aria-hidden="true"></i></span>
+        <span><span class="label">CloudForge</span><span class="url">My business / trycloudforge.com</span></span>
+        <i class="arrow" data-lucide="arrow-up-right" aria-hidden="true"></i>
+      </a>
+      <a class="link" href="https://github.com/RETR0-OS">
+        <span class="symbol github"><i data-lucide="github" aria-hidden="true"></i></span>
+        <span><span class="label">GitHub</span><span class="url">Code, projects &amp; open source / RETR0-OS</span></span>
+        <i class="arrow" data-lucide="arrow-up-right" aria-hidden="true"></i>
+      </a>
+      <a class="link" href="https://linkedin.com/in/aadityajindal12">
+        <span class="symbol linkedin"><i data-lucide="linkedin" aria-hidden="true"></i></span>
+        <span><span class="label">LinkedIn</span><span class="url">Let's connect / aadityajindal12</span></span>
+        <i class="arrow" data-lucide="arrow-up-right" aria-hidden="true"></i>
+      </a>
+    </nav>
+    <footer><span class="wordmark">RETR0-OS</span><span>Ideas welcome. Conversations, too.</span></footer>
+  </main>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script>if (globalThis.lucide) lucide.createIcons();</script>
+</body>
+</html>
